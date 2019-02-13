@@ -19,14 +19,14 @@ public class Temperature_converter {
         System.out.println("Please enter the temperature");
         double temp_value = scan.nextDouble();
 
-        if(tempType.equals("F"))
+        if(tempType.equalsIgnoreCase("F"))
         {
             double result = (temp_value - 32) / 1.8;
             System.out.println("When converting " + temp_value + " from Fahrenheit to celcius, \n" +
                                 "the result is " + result + " degrees Celcius");
 
         }
-        else if (tempType.equals("C")){
+        else if (tempType.equalsIgnoreCase("C")){
             double result = temp_value * 1.8 + 32;
             System.out.println("When converting " + temp_value + " from Celcius to Fahrenheit, \n" +
                     "the result is " + result + " degrees Farenheit");
